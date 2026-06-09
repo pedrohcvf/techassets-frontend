@@ -1,7 +1,7 @@
 import axios from "axios";
 import {ColaboradorRequest, ColaboradorResponse} from "../types/colaborador";
 
-const API_URL = `${import.meta.env.VITE_API_URL}/itens`;
+const API_URL = `${import.meta.env.VITE_API_URL}/colaboradores`;
 
 // LISTAR COLABORADORES
 export const listarColaboradores = async (): Promise<ColaboradorResponse[]> => {
