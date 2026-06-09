@@ -1,7 +1,7 @@
 import axios from "axios";
 import { ProdutoRequest, ProdutoResponse } from "../types/produto";
 
-const API_URL = "http://localhost:8080/produtos";
+const API_URL = `${import.meta.env.VITE_API_URL}/itens`;
 
 // LISTAR TODOS OS PRODUTOS
 export const listarProdutos = async (): Promise<ProdutoResponse[]> => {

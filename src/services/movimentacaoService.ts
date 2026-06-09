@@ -1,7 +1,7 @@
 import axios from "axios";
 import {MovimentacaoRequest , MovimentacaoResponse} from  "../types/movimentacao";
 
-const API_URL = "http://localhost:8080/movimentacoes";
+const API_URL = `${import.meta.env.VITE_API_URL}/itens`;
 
 // LISTAR TODOS AS MOVIMENTACOES
 export const listarMovimentacoes = async (): Promise<MovimentacaoResponse[]> => {

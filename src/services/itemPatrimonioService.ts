@@ -1,7 +1,7 @@
 import axios from "axios";
 import {ItemPatrimonioRequest, ItemPatrimonioResponse} from "../types/itemPatrimonio";
 
-const API_URL = "http://localhost:8080/itens"
+const API_URL = `${import.meta.env.VITE_API_URL}/itens`
 
 // LISTAR ITENS
 export const listarItens = async (): Promise<ItemPatrimonioResponse[]> =>{
